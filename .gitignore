@@ -1,0 +1,12 @@
+# Ignore everything
+*
+# Except ...
+# ... files we want to include:
+!custom.nix
+!flake.nix
+!flake.lock
+!.gitignore
+!LICENSE
+!.github/
+!.github/LICENSE
+!.github/README.md
