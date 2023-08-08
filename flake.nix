@@ -14,9 +14,6 @@
           isoImage.squashfsCompression = "gzip -Xcompression-level 1";
           # Enable SSH in the boot process.
           systemd.services.sshd.wantedBy = nixos.lib.mkForce [ "multi-user.target" ];
-          users.users.root.openssh.authorizedKeys.keys = [
-            "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBDj2FdHqTEFS2AFwVXbc/93v+tKlD5MlSOFwWlGAJoNVFuOZh0sptdnaDR1XwIFCfGtFGvx0vNHJxe8uIFUbP0="
-          ];
         };
       in 
       {
