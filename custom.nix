@@ -1,9 +1,5 @@
 { config, lib, pkgs, ... }:
 {
-  # imports = [
-  #   fontsModule
-  # ];
-
   environment.systemPackages = [
     pkgs.helix
     pkgs.htop
@@ -17,7 +13,5 @@
     initialHashedPassword = "";
     openssh.authorizedKeys.keys = [ "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBDj2FdHqTEFS2AFwVXbc/93v+tKlD5MlSOFwWlGAJoNVFuOZh0sptdnaDR1XwIFCfGtFGvx0vNHJxe8uIFUbP0=" ];
   };
-
-  
 }
 
